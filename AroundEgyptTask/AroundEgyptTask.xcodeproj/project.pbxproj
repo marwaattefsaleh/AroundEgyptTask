@@ -8,19 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3D4693BD59A6D308EC1EE4AB /* Pods_AroundEgyptTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C53B30172DC23FC34126003 /* Pods_AroundEgyptTaskTests.framework */; };
-		51D45DFFFDD9B8AB21BEDFFF /* Pods_AroundEgyptTask_AroundEgyptTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C09818843F0DFDBD6B49FF /* Pods_AroundEgyptTask_AroundEgyptTaskUITests.framework */; };
 		9A14165686B1E0B6C0C58A6E /* Pods_AroundEgyptTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEB3AD73DD2C75B98B5B0AA /* Pods_AroundEgyptTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		BB8B36872EB0836D00D8BD08 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BB8B366E2EB0836B00D8BD08 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB8B36752EB0836B00D8BD08;
-			remoteInfo = AroundEgyptTask;
-		};
-		BB8B36912EB0836D00D8BD08 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BB8B366E2EB0836B00D8BD08 /* Project object */;
 			proxyType = 1;
@@ -38,15 +30,27 @@
 		88C09818843F0DFDBD6B49FF /* Pods_AroundEgyptTask_AroundEgyptTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroundEgyptTask_AroundEgyptTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8B36762EB0836B00D8BD08 /* AroundEgyptTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundEgyptTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB8B36862EB0836D00D8BD08 /* AroundEgyptTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AroundEgyptTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BB8B36902EB0836D00D8BD08 /* AroundEgyptTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AroundEgyptTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5965A40F0F2CB945F23B561 /* Pods-AroundEgyptTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-AroundEgyptTaskTests/Pods-AroundEgyptTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CDEB3AD73DD2C75B98B5B0AA /* Pods_AroundEgyptTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroundEgyptTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5E92050574C01903702322 /* Pods-AroundEgyptTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptTask.release.xcconfig"; path = "Target Support Files/Pods-AroundEgyptTask/Pods-AroundEgyptTask.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BB8B38962EB0AD1200D8BD08 /* Exceptions for "AroundEgyptTask" folder in "AroundEgyptTask" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BB8B36752EB0836B00D8BD08 /* AroundEgyptTask */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		BB8B36782EB0836B00D8BD08 /* AroundEgyptTask */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BB8B38962EB0AD1200D8BD08 /* Exceptions for "AroundEgyptTask" folder in "AroundEgyptTask" target */,
+			);
 			path = AroundEgyptTask;
 			sourceTree = "<group>";
 		};
@@ -76,14 +80,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D4693BD59A6D308EC1EE4AB /* Pods_AroundEgyptTaskTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BB8B368D2EB0836D00D8BD08 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				51D45DFFFDD9B8AB21BEDFFF /* Pods_AroundEgyptTask_AroundEgyptTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +126,6 @@
 			children = (
 				BB8B36762EB0836B00D8BD08 /* AroundEgyptTask.app */,
 				BB8B36862EB0836D00D8BD08 /* AroundEgyptTaskTests.xctest */,
-				BB8B36902EB0836D00D8BD08 /* AroundEgyptTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,29 +180,6 @@
 			productReference = BB8B36862EB0836D00D8BD08 /* AroundEgyptTaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		BB8B368F2EB0836D00D8BD08 /* AroundEgyptTaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BB8B36A02EB0836D00D8BD08 /* Build configuration list for PBXNativeTarget "AroundEgyptTaskUITests" */;
-			buildPhases = (
-				A01AB20015D15ECB15023476 /* [CP] Check Pods Manifest.lock */,
-				BB8B368C2EB0836D00D8BD08 /* Sources */,
-				BB8B368D2EB0836D00D8BD08 /* Frameworks */,
-				BB8B368E2EB0836D00D8BD08 /* Resources */,
-				9CB159F20F433435D8081C48 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BB8B36922EB0836D00D8BD08 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				BB8B36932EB0836D00D8BD08 /* AroundEgyptTaskUITests */,
-			);
-			name = AroundEgyptTaskUITests;
-			productName = AroundEgyptTaskUITests;
-			productReference = BB8B36902EB0836D00D8BD08 /* AroundEgyptTaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -222,10 +194,6 @@
 						CreatedOnToolsVersion = 16.4;
 					};
 					BB8B36852EB0836D00D8BD08 = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = BB8B36752EB0836B00D8BD08;
-					};
-					BB8B368F2EB0836D00D8BD08 = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = BB8B36752EB0836B00D8BD08;
 					};
@@ -247,7 +215,6 @@
 			targets = (
 				BB8B36752EB0836B00D8BD08 /* AroundEgyptTask */,
 				BB8B36852EB0836D00D8BD08 /* AroundEgyptTaskTests */,
-				BB8B368F2EB0836D00D8BD08 /* AroundEgyptTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,13 +228,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		BB8B36842EB0836D00D8BD08 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BB8B368E2EB0836D00D8BD08 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,49 +259,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9CB159F20F433435D8081C48 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AroundEgyptTask-AroundEgyptTaskUITests/Pods-AroundEgyptTask-AroundEgyptTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AroundEgyptTask-AroundEgyptTaskUITests/Pods-AroundEgyptTask-AroundEgyptTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AroundEgyptTask-AroundEgyptTaskUITests/Pods-AroundEgyptTask-AroundEgyptTaskUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A01AB20015D15ECB15023476 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-AroundEgyptTask-AroundEgyptTaskUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		BB8B36EA2EB0859500D8BD08 /* Run Needle Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,8 +275,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "
-";
+			shellScript = "/opt/homebrew/bin/needle generate \"${SRCROOT}/AroundEgyptTask/Generated/NeedleGenerated.swift\" \"${SRCROOT}/AroundEgyptTask/\"\n\n";
 		};
 		BB8B36EB2EB085BE00D8BD08 /* Run swiftlint Script */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -459,13 +375,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BB8B368C2EB0836D00D8BD08 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -473,11 +382,6 @@
 			isa = PBXTargetDependency;
 			target = BB8B36752EB0836B00D8BD08 /* AroundEgyptTask */;
 			targetProxy = BB8B36872EB0836D00D8BD08 /* PBXContainerItemProxy */;
-		};
-		BB8B36922EB0836D00D8BD08 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BB8B36752EB0836B00D8BD08 /* AroundEgyptTask */;
-			targetProxy = BB8B36912EB0836D00D8BD08 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -617,6 +521,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AroundEgyptTask/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -658,6 +563,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AroundEgyptTask/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -735,54 +641,6 @@
 			};
 			name = Release;
 		};
-		BB8B36A12EB0836D00D8BD08 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D8764AACCE3E06E14A85CD1 /* Pods-AroundEgyptTask-AroundEgyptTaskUITests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TCD864MYK2;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ml.AroundEgyptTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = AroundEgyptTask;
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Debug;
-		};
-		BB8B36A22EB0836D00D8BD08 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7BBA68D003EDBCFD8993A462 /* Pods-AroundEgyptTask-AroundEgyptTaskUITests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = TCD864MYK2;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ml.AroundEgyptTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TEST_TARGET_NAME = AroundEgyptTask;
-				XROS_DEPLOYMENT_TARGET = 2.5;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -809,15 +667,6 @@
 			buildConfigurations = (
 				BB8B369E2EB0836D00D8BD08 /* Debug */,
 				BB8B369F2EB0836D00D8BD08 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BB8B36A02EB0836D00D8BD08 /* Build configuration list for PBXNativeTarget "AroundEgyptTaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BB8B36A12EB0836D00D8BD08 /* Debug */,
-				BB8B36A22EB0836D00D8BD08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

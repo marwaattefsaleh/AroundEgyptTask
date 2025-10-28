@@ -9,8 +9,8 @@ import Foundation
 import Alamofire
 @testable import AroundEgyptTask
 
-@MainActor
-final class MockExperienceRepository: ExperienceRepositoryProtocol {
+class MockExperienceRepository: ExperienceRepositoryProtocol {
+    
     var recommendedOnline: [ExperienceEntity] = []
     var recentOnline: [ExperienceEntity] = []
     var searchedOnline: [ExperienceEntity] = []
@@ -25,13 +25,15 @@ final class MockExperienceRepository: ExperienceRepositoryProtocol {
     func getRecommendedExperiences() async throws -> [ExperienceEntity] { recommendedOnline }
     func getRecentExperiences() async throws -> [ExperienceEntity] { recentOnline }
     func searchExperiences(by searchText: String) async throws -> [ExperienceEntity] { searchedOnline }
-    func likeExperience(id: String) async throws -> ExperienceEntity? { likedEntity }
+    func likeExperience(id: String) async throws -> Int? { likedEntity?.likesNo }
     func getExperienceDetails(by id: String) async throws -> ExperienceEntity? { detailsOnline }
 
-    func saveExperiencesToLocalDB(_ experiences: [ExperienceDTO], isRecent: Bool) async throws {}
+    func saveExperiencesToLocalDB(_ experiences: [AroundEgyptTask.ExperienceDTO], isRecommended: Bool, isRecent: Bool) async throws {}
     func getExperienceDetailsLocaly(by id: String) async throws -> ExperienceEntity? { detailsLocal }
     func getRecentExperiencesLocaly() async throws -> [ExperienceEntity] { recentLocal }
     func getRecommendedExperiencesLocaly() async throws -> [ExperienceEntity] { recommendedLocal }
     func searchExperienceLocaly(by searchText: String) async throws -> [ExperienceEntity] { searchedLocal }
-    func likeExperienceLocaly(id: String) async throws -> ExperienceEntity? { likedEntity }
+    func likeExperienceLocaly(id: String, likesNo: Int) async throws -> ExperienceEntity? { likedEntity }
+    func saveOrUpdateExperience(_ item: AroundEgyptTask.ExperienceDTO) async throws {
+    }
 }

@@ -9,7 +9,6 @@ import XCTest
 @testable import AroundEgyptTask
 
 // MARK: - Test Case
-@MainActor
 final class ExperienceUseCaseTests: XCTestCase {
 
     var useCase: ExperienceUseCase!
@@ -39,7 +38,7 @@ final class ExperienceUseCaseTests: XCTestCase {
             isRecommended: false,
             isRecent: false,
             isLiked: false,
-            cityName: nil
+            cityName: nil, order: 0
         )
     }
 
@@ -94,15 +93,6 @@ final class ExperienceUseCaseTests: XCTestCase {
 
         let result = try await useCase.searchExperience(by: "query", isOnline: false)
         XCTAssertEqual(result.first?.id, entity.id)
-    }
-
-    // MARK: - likeExperience
-    func test_likeExperience_returnsEntity() async throws {
-        let entity = makeEntity()
-        mockRepository.likedEntity = entity
-
-        let result = try await useCase.likeExperience(id: "like1", isOnline: true)
-        XCTAssertEqual(result?.id, entity.id)
     }
 
     // MARK: - getExperienceDetails

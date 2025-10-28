@@ -18,4 +18,3 @@ struct ReviewDTO: Codable, Identifiable {
         case createdAt = "created_at"
     }
 }
-

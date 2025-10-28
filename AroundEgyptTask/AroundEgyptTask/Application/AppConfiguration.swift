@@ -12,7 +12,8 @@ protocol AppConfigurationProtocol: AnyObject {
     var baseURL: String { get }
 }
 
-final class AppConfiguration: AppConfigurationProtocol {
+class AppConfiguration: AppConfigurationProtocol {
+    // Computed property that reads the base URL from the app's Info.plist
     var baseURL: String {
         let urlString = Bundle.main.infoDictionary?[Constants.BaseUrlKey] as? String
         return urlString?.replacingOccurrences(of: "\\/", with: "/") ?? ""

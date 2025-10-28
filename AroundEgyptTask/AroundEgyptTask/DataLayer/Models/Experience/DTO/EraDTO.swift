@@ -17,4 +17,3 @@ struct EraDTO: Codable, Identifiable {
         case updatedAt = "updated_at"
     }
 }
-

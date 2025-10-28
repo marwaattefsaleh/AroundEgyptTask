@@ -11,24 +11,21 @@ import SwiftData
 @main
 struct AroundEgyptTaskApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
-        do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
-        } catch {
-            fatalError("Could not create ModelContainer: \(error)")
-        }
-    }()
-
+    var appComponent: AppComponent!
+    
+    init() {
+        
+        // Register Needle providers
+        registerProviderFactories()
+        
+        // Initialize your root DI component
+        appComponent = AppComponent()
+    }
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            appComponent.HomeViewBuilder.homeView
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(appComponent.modelContainer)
     }
 }

@@ -16,4 +16,3 @@ struct TagDTO: Codable, Identifiable {
         case topPick = "top_pick"
     }
 }
-

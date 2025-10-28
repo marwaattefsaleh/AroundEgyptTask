@@ -61,10 +61,10 @@ struct ExperienceDTO: Codable, Identifiable {
 }
 extension ExperienceDTO {
     func toEntity(isRecent: Bool = false) -> ExperienceEntity {
-        return ExperienceEntity(id: id, title: title, desc: desc, coverPhoto: coverPhoto, likesNo: likesNo ?? 0, viewsNo: viewsNo ?? 0, isRecommended: recommended == 1, isRecent: isRecent, isLiked: isLiked ?? false, cityName: city?.name)
+        return ExperienceEntity(id: id, title: title, desc: desc, coverPhoto: coverPhoto, likesNo: likesNo ?? 0, viewsNo: viewsNo ?? 0, isRecommended: recommended == 1, isRecent: isRecent, isLiked: isLiked ?? false, cityName: city?.name, order: 0)
     }
     
-    func toDBModel(isRecent: Bool) -> ExperienceDBModel {
+    func toDBModel(isRecent: Bool = false) -> ExperienceDBModel {
         return ExperienceDBModel(id: id, title: title, desc: desc ?? "", coverPhoto: coverPhoto, likesNo: likesNo ?? 0, viewsNo: viewsNo ?? 0, isRecommended: recommended == 1, isRecent: isRecent, isLiked: isLiked ?? false, cityName: city?.name)
     }
 }

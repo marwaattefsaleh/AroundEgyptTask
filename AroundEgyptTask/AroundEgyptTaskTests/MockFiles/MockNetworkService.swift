@@ -13,7 +13,7 @@ import Alamofire
 class MockNetworkService: NetworkServiceProtocol {
     var result: Result<Any, Error>?
 
-    func request<T>(endpoint: String, method: HTTPMethod, parameters: [String : Any]?, headers: HTTPHeaders?) async throws -> T where T : Decodable {
+    func request<T>(endpoint: String, method: HTTPMethod, parameters: [String: Any]?, headers: HTTPHeaders?) async throws -> T where T: Decodable {
         switch result {
         case .success(let data):
             guard let typed = data as? T else {

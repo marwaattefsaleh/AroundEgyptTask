@@ -14,7 +14,7 @@ class MockRemoteDataSource: ExperienceRemoteDataSourceProtocol {
     var experienceDetail: ExperienceDTO?
     var likedExperience: ExperienceDTO?
     
-    func getExperiences(filter: [String : Any]?) async throws -> [ExperienceDTO] {
+    func getExperiences(filter: [String: Any]?) async throws -> [ExperienceDTO] {
         return experiences
     }
     
@@ -22,7 +22,7 @@ class MockRemoteDataSource: ExperienceRemoteDataSourceProtocol {
         return experienceDetail
     }
     
-    func likeExperience(id: String) async throws -> ExperienceDTO? {
-        return likedExperience
+    func likeExperience(id: String) async throws -> Int? {
+        return likedExperience?.likesNo
     }
 }

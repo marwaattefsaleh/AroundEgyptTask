@@ -18,4 +18,3 @@ struct TranslatedDayDTO: Codable {
     let day: String
     let time: String
 }
-

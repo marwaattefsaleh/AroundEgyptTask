@@ -11,7 +11,6 @@ import Foundation
 import Alamofire
 
 // MARK: - Test Class
-@MainActor
 class ExperienceRemoteDataSourceTests: XCTestCase {
     var sut: ExperienceRemoteDataSource!
     var mockService: MockNetworkService!
@@ -131,10 +130,10 @@ class ExperienceRemoteDataSourceTests: XCTestCase {
     // MARK: - likeExperience(id:)
     func test_likeExperience_success() async throws {
         let dto = makeDTO()
-        mockService.result = .success(makeBaseResponse(data: dto))
+        mockService.result = .success(makeBaseResponse(data: 5))
 
-        let result = try await sut.likeExperience(id: "1")
-        XCTAssertEqual(result?.id, dto.id)
+        let likesNo = try await sut.likeExperience(id: "1")
+        XCTAssertEqual(likesNo, dto.likesNo)
     }
 
     func test_likeExperience_failure_throws() async {

@@ -10,7 +10,7 @@ import Foundation
 protocol ExperienceRemoteDataSourceProtocol {
     func getExperiences(filter: [String: Any]?) async throws -> [ExperienceDTO] 
     func getExperienceDetails(by id: String) async throws -> ExperienceDTO?
-    func likeExperience(id: String) async throws -> ExperienceDTO?
+    func likeExperience(id: String) async throws -> Int?
 }
 
 class ExperienceRemoteDataSource: ExperienceRemoteDataSourceProtocol {
@@ -38,8 +38,8 @@ class ExperienceRemoteDataSource: ExperienceRemoteDataSourceProtocol {
         return response.data
     }
     
-    func likeExperience(id: String) async throws -> ExperienceDTO? {
-        let response: BaseResponse<ExperienceDTO> = try await networkService.request(
+    func likeExperience(id: String) async throws -> Int? {
+        let response: BaseResponse<Int> = try await networkService.request(
             endpoint: "\(Constants.basePath)\(Constants.Endpoints.experiences)/\(id)\(Constants.Endpoints.likeExperience)",
             method: .post, parameters: nil, headers: nil
         )

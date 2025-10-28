@@ -8,7 +8,6 @@
 import XCTest
 @testable import AroundEgyptTask
 
-@MainActor
 final class ExperienceRepositoryTests: XCTestCase {
     
     var sut: ExperienceRepository!
@@ -65,7 +64,8 @@ final class ExperienceRepositoryTests: XCTestCase {
     func test_getRecentExperiences_success_savesToLocal() async throws {
         let dto = makeDTO()
         mockRemote.experiences = [dto]
-        
+        mockLocal.recent = [dto.toDBModel(isRecent: true)]
+
         let result = try await sut.getRecentExperiences()
         
         XCTAssertEqual(result.count, 1)
@@ -94,8 +94,8 @@ final class ExperienceRepositoryTests: XCTestCase {
         let dto = makeDTO(id: "like1")
         mockRemote.likedExperience = dto
         
-        let result = try await sut.likeExperience(id: "like1")
-        XCTAssertEqual(result?.id, dto.id)
+        let likesNo = try await sut.likeExperience(id: "like1")
+        XCTAssertEqual(likesNo, dto.likesNo)
     }
     
     // MARK: - Local Methods
@@ -139,13 +139,13 @@ final class ExperienceRepositoryTests: XCTestCase {
         let db = makeDBModel(id: "likeLocal")
         mockLocal.likedExperience = db
         
-        let result = try await sut.likeExperienceLocaly(id: "likeLocal")
+        let result = try await sut.likeExperienceLocaly(id: "likeLocal", likesNo: 1)
         XCTAssertEqual(result?.id, db.id)
     }
     
     func test_saveExperiencesToLocalDB_callsLocal() async throws {
         let dto = makeDTO()
-        try await sut.saveExperiencesToLocalDB([dto], isRecent: true)
+        try await sut.saveExperiencesToLocalDB([dto], isRecommended: false, isRecent: true)
         XCTAssertTrue(mockLocal.savedExperiencesCalled)
     }
 }

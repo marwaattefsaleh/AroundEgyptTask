@@ -9,7 +9,7 @@ protocol ExperienceUseCaseProtocol {
     func getRecommendedExperiences(isOnline: Bool) async throws -> [ExperienceEntity]
     func getRecentExperiences(isOnline: Bool) async throws -> [ExperienceEntity]
     func searchExperience(by searchText: String, isOnline: Bool) async throws -> [ExperienceEntity]
-    func likeExperience(id: String, isOnline: Bool) async throws -> ExperienceEntity?
+    func likeExperience(id: String, isOnline: Bool) async throws -> Int?
     func getExperienceDetails(id: String, isOnline: Bool) async throws -> ExperienceEntity?
 }
 
@@ -44,7 +44,7 @@ class ExperienceUseCase: ExperienceUseCaseProtocol {
         }
     }
     
-    func likeExperience(id: String, isOnline: Bool) async throws -> ExperienceEntity? {
+    func likeExperience(id: String, isOnline: Bool) async throws -> Int? {
         try await repository.likeExperience(id: id)
     }
     

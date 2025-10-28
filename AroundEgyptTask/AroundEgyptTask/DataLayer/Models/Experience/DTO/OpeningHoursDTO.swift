@@ -30,4 +30,3 @@ struct OpeningHoursDTO: Codable {
         try container.encode(hours)
     }
 }
-
