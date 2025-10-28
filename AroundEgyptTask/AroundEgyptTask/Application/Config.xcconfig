@@ -1,0 +1,11 @@
+//
+//  Config.xcconfig
+//  AroundEgyptTask
+//
+//  Created by Marwa Attef on 28/10/2025.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://developer.apple.com/documentation/xcode/adding-a-build-configuration-file-to-your-project
+
+BASE_URL = https:\/\/aroundegypt.34ml.com

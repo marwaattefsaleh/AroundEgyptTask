@@ -1,0 +1,10 @@
+//
+//  Constants.swift
+//  AroundEgyptTask
+//
+//  Created by Marwa Attef on 28/10/2025.
+//
+
+struct Constants {
+    static let BaseUrlKey = "BASE_URL"
+}
