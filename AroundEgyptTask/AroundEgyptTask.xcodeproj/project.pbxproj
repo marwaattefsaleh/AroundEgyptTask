@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D4693BD59A6D308EC1EE4AB /* Pods_AroundEgyptTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C53B30172DC23FC34126003 /* Pods_AroundEgyptTaskTests.framework */; };
+		9A14165686B1E0B6C0C58A6E /* Pods_AroundEgyptTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDEB3AD73DD2C75B98B5B0AA /* Pods_AroundEgyptTask.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB8B36872EB0836D00D8BD08 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB8B366E2EB0836B00D8BD08 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB8B36752EB0836B00D8BD08;
+			remoteInfo = AroundEgyptTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11F784329F0EF497E1914333 /* Pods-AroundEgyptTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptTask.debug.xcconfig"; path = "Target Support Files/Pods-AroundEgyptTask/Pods-AroundEgyptTask.debug.xcconfig"; sourceTree = "<group>"; };
+		2D8764AACCE3E06E14A85CD1 /* Pods-AroundEgyptTask-AroundEgyptTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptTask-AroundEgyptTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-AroundEgyptTask-AroundEgyptTaskUITests/Pods-AroundEgyptTask-AroundEgyptTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3C53B30172DC23FC34126003 /* Pods_AroundEgyptTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroundEgyptTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BBA68D003EDBCFD8993A462 /* Pods-AroundEgyptTask-AroundEgyptTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptTask-AroundEgyptTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-AroundEgyptTask-AroundEgyptTaskUITests/Pods-AroundEgyptTask-AroundEgyptTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		876B2C0A73BD0CE040E1E4FA /* Pods-AroundEgyptTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptTaskTests.release.xcconfig"; path = "Target Support Files/Pods-AroundEgyptTaskTests/Pods-AroundEgyptTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		88C09818843F0DFDBD6B49FF /* Pods_AroundEgyptTask_AroundEgyptTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroundEgyptTask_AroundEgyptTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8B36762EB0836B00D8BD08 /* AroundEgyptTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AroundEgyptTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB8B36862EB0836D00D8BD08 /* AroundEgyptTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AroundEgyptTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5965A40F0F2CB945F23B561 /* Pods-AroundEgyptTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-AroundEgyptTaskTests/Pods-AroundEgyptTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CDEB3AD73DD2C75B98B5B0AA /* Pods_AroundEgyptTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AroundEgyptTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5E92050574C01903702322 /* Pods-AroundEgyptTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AroundEgyptTask.release.xcconfig"; path = "Target Support Files/Pods-AroundEgyptTask/Pods-AroundEgyptTask.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		BB8B38962EB0AD1200D8BD08 /* Exceptions for "AroundEgyptTask" folder in "AroundEgyptTask" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = BB8B36752EB0836B00D8BD08 /* AroundEgyptTask */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		BB8B36782EB0836B00D8BD08 /* AroundEgyptTask */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				BB8B38962EB0AD1200D8BD08 /* Exceptions for "AroundEgyptTask" folder in "AroundEgyptTask" target */,
+			);
+			path = AroundEgyptTask;
+			sourceTree = "<group>";
+		};
+		BB8B36892EB0836D00D8BD08 /* AroundEgyptTaskTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AroundEgyptTaskTests;
+			sourceTree = "<group>";
+		};
+		BB8B36932EB0836D00D8BD08 /* AroundEgyptTaskUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AroundEgyptTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB8B36732EB0836B00D8BD08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A14165686B1E0B6C0C58A6E /* Pods_AroundEgyptTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8B36832EB0836D00D8BD08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D4693BD59A6D308EC1EE4AB /* Pods_AroundEgyptTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70C9DD31CE3E990E38D09E34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDEB3AD73DD2C75B98B5B0AA /* Pods_AroundEgyptTask.framework */,
+				88C09818843F0DFDBD6B49FF /* Pods_AroundEgyptTask_AroundEgyptTaskUITests.framework */,
+				3C53B30172DC23FC34126003 /* Pods_AroundEgyptTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B519194E50FDBFBD2A2B6CA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11F784329F0EF497E1914333 /* Pods-AroundEgyptTask.debug.xcconfig */,
+				DB5E92050574C01903702322 /* Pods-AroundEgyptTask.release.xcconfig */,
+				2D8764AACCE3E06E14A85CD1 /* Pods-AroundEgyptTask-AroundEgyptTaskUITests.debug.xcconfig */,
+				7BBA68D003EDBCFD8993A462 /* Pods-AroundEgyptTask-AroundEgyptTaskUITests.release.xcconfig */,
+				C5965A40F0F2CB945F23B561 /* Pods-AroundEgyptTaskTests.debug.xcconfig */,
+				876B2C0A73BD0CE040E1E4FA /* Pods-AroundEgyptTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BB8B366D2EB0836B00D8BD08 = {
+			isa = PBXGroup;
+			children = (
+				BB8B36782EB0836B00D8BD08 /* AroundEgyptTask */,
+				BB8B36892EB0836D00D8BD08 /* AroundEgyptTaskTests */,
+				BB8B36932EB0836D00D8BD08 /* AroundEgyptTaskUITests */,
+				BB8B36772EB0836B00D8BD08 /* Products */,
+				B519194E50FDBFBD2A2B6CA4 /* Pods */,
+				70C9DD31CE3E990E38D09E34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB8B36772EB0836B00D8BD08 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB8B36762EB0836B00D8BD08 /* AroundEgyptTask.app */,
+				BB8B36862EB0836D00D8BD08 /* AroundEgyptTaskTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB8B36752EB0836B00D8BD08 /* AroundEgyptTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8B369A2EB0836D00D8BD08 /* Build configuration list for PBXNativeTarget "AroundEgyptTask" */;
+			buildPhases = (
+				82FE4830B7472713AAC9D42F /* [CP] Check Pods Manifest.lock */,
+				BB8B36EA2EB0859500D8BD08 /* Run Needle Script */,
+				BB8B36722EB0836B00D8BD08 /* Sources */,
+				BB8B36732EB0836B00D8BD08 /* Frameworks */,
+				BB8B36742EB0836B00D8BD08 /* Resources */,
+				CA6AFC718315A36F45C2B379 /* [CP] Embed Pods Frameworks */,
+				BB8B36EB2EB085BE00D8BD08 /* Run swiftlint Script */,
+				BB8B36EC2EB085E600D8BD08 /* Run crashlytics script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				BB8B36782EB0836B00D8BD08 /* AroundEgyptTask */,
+			);
+			name = AroundEgyptTask;
+			productName = AroundEgyptTask;
+			productReference = BB8B36762EB0836B00D8BD08 /* AroundEgyptTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB8B36852EB0836D00D8BD08 /* AroundEgyptTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB8B369D2EB0836D00D8BD08 /* Build configuration list for PBXNativeTarget "AroundEgyptTaskTests" */;
+			buildPhases = (
+				C420E7DB7B5C0D11EDE2BD3C /* [CP] Check Pods Manifest.lock */,
+				BB8B36822EB0836D00D8BD08 /* Sources */,
+				BB8B36832EB0836D00D8BD08 /* Frameworks */,
+				BB8B36842EB0836D00D8BD08 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB8B36882EB0836D00D8BD08 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				BB8B36892EB0836D00D8BD08 /* AroundEgyptTaskTests */,
+			);
+			name = AroundEgyptTaskTests;
+			productName = AroundEgyptTaskTests;
+			productReference = BB8B36862EB0836D00D8BD08 /* AroundEgyptTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB8B366E2EB0836B00D8BD08 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					BB8B36752EB0836B00D8BD08 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					BB8B36852EB0836D00D8BD08 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = BB8B36752EB0836B00D8BD08;
+					};
+				};
+			};
+			buildConfigurationList = BB8B36712EB0836B00D8BD08 /* Build configuration list for PBXProject "AroundEgyptTask" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB8B366D2EB0836B00D8BD08;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BB8B36772EB0836B00D8BD08 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB8B36752EB0836B00D8BD08 /* AroundEgyptTask */,
+				BB8B36852EB0836D00D8BD08 /* AroundEgyptTaskTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB8B36742EB0836B00D8BD08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8B36842EB0836D00D8BD08 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		82FE4830B7472713AAC9D42F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AroundEgyptTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB8B36EA2EB0859500D8BD08 /* Run Needle Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Needle Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/homebrew/bin/needle generate \"${SRCROOT}/AroundEgyptTask/Generated/NeedleGenerated.swift\" \"${SRCROOT}/AroundEgyptTask/\"\n\n";
+		};
+		BB8B36EB2EB085BE00D8BD08 /* Run swiftlint Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run swiftlint Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "    \"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		BB8B36EC2EB085E600D8BD08 /* Run crashlytics script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}\n",
+			);
+			name = "Run crashlytics script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		C420E7DB7B5C0D11EDE2BD3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AroundEgyptTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA6AFC718315A36F45C2B379 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AroundEgyptTask/Pods-AroundEgyptTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AroundEgyptTask/Pods-AroundEgyptTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AroundEgyptTask/Pods-AroundEgyptTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB8B36722EB0836B00D8BD08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB8B36822EB0836D00D8BD08 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB8B36882EB0836D00D8BD08 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB8B36752EB0836B00D8BD08 /* AroundEgyptTask */;
+			targetProxy = BB8B36872EB0836D00D8BD08 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB8B36982EB0836D00D8BD08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = BB8B36782EB0836B00D8BD08 /* AroundEgyptTask */;
+			baseConfigurationReferenceRelativePath = Application/Config.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = TCD864MYK2;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB8B36992EB0836D00D8BD08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReferenceAnchor = BB8B36782EB0836B00D8BD08 /* AroundEgyptTask */;
+			baseConfigurationReferenceRelativePath = Application/Config.xcconfig;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TCD864MYK2;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BB8B369B2EB0836D00D8BD08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F784329F0EF497E1914333 /* Pods-AroundEgyptTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AroundEgyptTask/AroundEgyptTask.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = TCD864MYK2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AroundEgyptTask/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ml.AroundEgyptTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		BB8B369C2EB0836D00D8BD08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB5E92050574C01903702322 /* Pods-AroundEgyptTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AroundEgyptTask/AroundEgyptTask.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TCD864MYK2;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AroundEgyptTask/Info.plist;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ml.AroundEgyptTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		BB8B369E2EB0836D00D8BD08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5965A40F0F2CB945F23B561 /* Pods-AroundEgyptTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TCD864MYK2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ml.AroundEgyptTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AroundEgyptTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AroundEgyptTask";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		BB8B369F2EB0836D00D8BD08 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 876B2C0A73BD0CE040E1E4FA /* Pods-AroundEgyptTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = TCD864MYK2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ml.AroundEgyptTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AroundEgyptTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AroundEgyptTask";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB8B36712EB0836B00D8BD08 /* Build configuration list for PBXProject "AroundEgyptTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8B36982EB0836D00D8BD08 /* Debug */,
+				BB8B36992EB0836D00D8BD08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8B369A2EB0836D00D8BD08 /* Build configuration list for PBXNativeTarget "AroundEgyptTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8B369B2EB0836D00D8BD08 /* Debug */,
+				BB8B369C2EB0836D00D8BD08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB8B369D2EB0836D00D8BD08 /* Build configuration list for PBXNativeTarget "AroundEgyptTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB8B369E2EB0836D00D8BD08 /* Debug */,
+				BB8B369F2EB0836D00D8BD08 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB8B366E2EB0836B00D8BD08 /* Project object */;
+}
