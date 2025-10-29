@@ -45,7 +45,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB8B368F2EB0836D00D8BD08"
+               BlueprintIdentifier = "BBD553692EB18D6B00C9744B"
                BuildableName = "AroundEgyptTaskUITests.xctest"
                BlueprintName = "AroundEgyptTaskUITests"
                ReferencedContainer = "container:AroundEgyptTask.xcodeproj">

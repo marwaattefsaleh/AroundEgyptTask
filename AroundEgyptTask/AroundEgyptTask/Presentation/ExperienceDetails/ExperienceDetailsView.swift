@@ -16,13 +16,14 @@ struct ExperienceDetailsView: View {
   @Binding var experience: ExperienceEntity
     
     var body: some View {
-        ScrollView {
+        ScrollView(.vertical, showsIndicators: false) {
             if viewModel.isLoading {
                 viewLoading
             } else {
                 viewContent
             }
-        }.onAppear {
+        }.accessibilityIdentifier("detailsScrollView")
+        .onAppear {
             viewModel.getExperienceDetails(id: experience.id)
         }.toast(isPresenting: $viewModel.showToast, duration: 2) {
             AlertToast(type: .regular, title: viewModel.toastMessage)
@@ -73,6 +74,7 @@ struct ExperienceDetailsView: View {
                             
                             .frame(width: Theme.Sizes.pt152, height: Theme.Sizes.pt46, alignment: .center)
                             .hexBackground(Theme.Colors.colorFFFFFF, cornerRadius: Theme.Sizes.pt7)
+                            .accessibilityIdentifier("exploreButton")
                         }
                     }
                 )
@@ -80,7 +82,7 @@ struct ExperienceDetailsView: View {
                 HStack {
                     Text("\(viewModel.experienceEntity?.title ?? "")")
                         .font(.system(size: Theme.Sizes.pt16, weight: .bold, design: .default))
-                        
+                        .accessibilityIdentifier("titleLabel")
                     Spacer()
                     Image("share")
                    
@@ -92,13 +94,14 @@ struct ExperienceDetailsView: View {
                         }
                     }) {
                         Image(viewModel.experienceEntity?.isLiked ?? false ? "like" :"unlike")
-                    }
+                    }.accessibilityIdentifier("likeButton")
                     Text("\(String(viewModel.experienceEntity?.likesNo ?? 0))")
                         .font(.system(size: Theme.Sizes.pt16, weight: .regular, design: .default))
-                    
+                        .accessibilityIdentifier("likesLabel")
                 }.padding(.top, Theme.Sizes.pt8)
                 Text("\(viewModel.experienceEntity?.cityName ?? ""), Egypt").frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(Color(hex: Theme.Colors.color555555))
+                    .accessibilityIdentifier("cityLabel")
                 Divider()
                     .background(Color.gray) // optional custom color
 
@@ -106,6 +109,7 @@ struct ExperienceDetailsView: View {
                     .font(.system(size: Theme.Sizes.pt22, weight: .bold, design: .default))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.vertical, Theme.Sizes.pt8)
+                    .accessibilityIdentifier("descriptionLabel")
                 
                 Text("\(viewModel.experienceEntity?.desc ?? "")")
                     .font(.system(size: Theme.Sizes.pt14, weight: .bold, design: .default))

@@ -50,6 +50,7 @@ struct HomeView: View {
                             Image("search")
                             TextField("search", text: $searchText, prompt: Text("Try “Luxor”")
                                 .foregroundColor(Color(hex: Theme.Colors.color8E8E93)))
+                            .accessibilityIdentifier("searchTextField")
                             .hexForeground(Theme.Colors.color000000)
                             .submitLabel(.search) // Show search button on keyboard
                             .onSubmit {
@@ -63,6 +64,8 @@ struct HomeView: View {
                                         .foregroundColor(.gray)
                                     
                                 } .frame(width: Theme.Sizes.pt20, height: Theme.Sizes.pt20).padding(0)
+                                    .accessibilityIdentifier("clearSearchButton")
+
                             }
                             
                         }.padding(8).hexBackground(Theme.Colors.color8E8E93, opacity: 0.12, cornerRadius: Theme.Sizes.pt10)
@@ -92,17 +95,19 @@ struct HomeView: View {
                     Button(action: { print("Person tapped") }) {
                         Image("filter")
                     }
+                    .accessibilityIdentifier("filterButton")
+
                 }
             }.sheet(item: $selectedExperience) { experience in
-                if let recommendedIndex = viewModel.recommendedExperienceEntityList.firstIndex(where: { $0.id == experience.id }) {
-                    viewModel.navigateToDetail(experience: $viewModel.recommendedExperienceEntityList[recommendedIndex])
-
-                } else if let recentIndex = viewModel.recentExperienceEntityList.firstIndex(where: { $0.id == experience.id }) {
-                    viewModel.navigateToDetail(experience: $viewModel.recentExperienceEntityList[recentIndex])
+                if let experienceBinding = bindingForExperience(withId: experience.id) {
+                    viewModel.navigateToDetail(experience: experienceBinding)
                 }
-                
             }.onAppear {
-                viewModel.getData()
+                if CommandLine.arguments.contains("--UITestMode") {
+                } else {
+                    viewModel.getData()
+
+                }
             }.toast(isPresenting: $viewModel.showToast, duration: 2) {
                 AlertToast(type: .regular, title: viewModel.toastMessage)
             }
@@ -127,6 +132,8 @@ struct HomeView: View {
                 .font(.system(size: Theme.Sizes.pt22, weight: .bold, design: .default))
                 .foregroundColor(Color(hex: Theme.Colors.color000000))
                 .padding(.leading, Theme.Sizes.pt16)
+                .accessibilityIdentifier("recommendedLabel")
+
             if viewModel.isLoadingRecommended {
                 viewLoading
             } else {
@@ -141,11 +148,14 @@ struct HomeView: View {
                                         viewModel.likeExperience(id: id)
                                     }
                                 })
+                               
                                     .frame(width: geometry.size.width)
                                     .contentShape(Rectangle())
                                     .onTapGesture {
                                         selectedExperience = viewModel.recommendedExperienceEntityList[ind]
                                     }
+                                    .accessibilityElement(children: .contain)
+                                        .accessibilityIdentifier("recommendedCell_\(ind)") 
                             }
                         }.scrollTargetLayout()
                     }.scrollTargetBehavior(.viewAligned)
@@ -208,6 +218,18 @@ struct HomeView: View {
                 .clipped()
                 .padding(.horizontal, Theme.Sizes.pt16)
         }.shimmering()
+    }
+    
+    private func bindingForExperience(withId id: String) -> Binding<ExperienceEntity>? {
+        if let index = viewModel.recommendedExperienceEntityList.firstIndex(where: { $0.id == id }) {
+            return $viewModel.recommendedExperienceEntityList[index]
+        }
+        
+        if let index = viewModel.recentExperienceEntityList.firstIndex(where: { $0.id == id }) {
+            return $viewModel.recentExperienceEntityList[index]
+        }
+        
+        return nil
     }
 }
 
