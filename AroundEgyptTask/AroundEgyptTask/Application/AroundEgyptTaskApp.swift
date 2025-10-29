@@ -38,7 +38,6 @@ struct AroundEgyptTaskApp: App {
                 )
             ]
             mockVM.recentExperienceEntityList = []
-            print("hhhhh\(mockVM.recommendedExperienceEntityList.count)")
             // Initialize HomeView directly with mock VM
             homeView = HomeView(viewModel: mockVM)
         } else {
