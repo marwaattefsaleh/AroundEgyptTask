@@ -39,7 +39,7 @@ final class ExperienceDetailsViewModelTests: XCTestCase {
     func test_getExperienceDetails_success() async throws {
         // Given
         let expected = ExperienceEntity(
-            id: "1",
+            id: "7f209d18-36a1-44d5-a0ed-b7eddfad48d6",
             title: "Pyramids",
             desc: "A great place",
             coverPhoto: nil,

@@ -29,6 +29,7 @@ final class HomeViewModel: ObservableObject {
         self.experienceUseCase = experienceUseCase
         self.router = router
         self.networkMonitor = networkMonitor
+        print("herer: \(recommendedExperienceEntityList.count)")
     }
     
     func getData() {
@@ -116,4 +117,6 @@ final class HomeViewModel: ObservableObject {
     func navigateToDetail(experience: Binding<ExperienceEntity>) -> ExperienceDetailsView {
         router.navigateToExperienceDetail(experience: experience)
     }
+    
+  
 }

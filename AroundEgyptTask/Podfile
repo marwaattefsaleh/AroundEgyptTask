@@ -6,13 +6,13 @@ target 'AroundEgyptTask' do
   use_frameworks!
 
   # Pods for AroundEgyptTask
-      pod 'Alamofire'
-      pod 'Firebase/Crashlytics'
-      pod 'SwiftLint'
-      pod 'NeedleFoundation'
-      pod 'Kingfisher'
+      pod 'Alamofire', '5.10.2'
+      pod 'Firebase/Crashlytics', '12.4.0'
+      pod 'SwiftLint', '0.62.1'
+      pod 'NeedleFoundation', '0.25.1'
+      pod 'Kingfisher', '8.6.0'
       pod 'SwiftUI-Shimmer', :git => 'https://github.com/markiv/SwiftUI-Shimmer.git'
-      pod 'AlertToast'
+      pod 'AlertToast', '1.3.9'
 
   target 'AroundEgyptTaskTests' do
     inherit! :search_paths

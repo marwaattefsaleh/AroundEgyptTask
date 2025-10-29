@@ -4,7 +4,6 @@
 //
 //  Created by Marwa Attef on 28/10/2025.
 //
-import XCTest
 import Foundation
 import Alamofire
 @testable import AroundEgyptTask
@@ -57,6 +56,18 @@ class MockExperienceUseCase: ExperienceUseCaseProtocol {
 
     func getExperienceDetails(id: String, isOnline: Bool) async throws -> ExperienceEntity? {
         if shouldThrow { throw URLError(.badServerResponse) }
-        return experienceToReturn
+        return      ExperienceEntity(
+            id: "7f209d18-36a1-44d5-a0ed-b7eddfad48d6",
+            title: "Test Experience",
+            desc: "Ancient site",
+            coverPhoto: nil,
+            likesNo: 0,
+            viewsNo: 0,
+            isRecommended: true,
+            isRecent: false,
+            isLiked: false,
+            cityName: "Cairo",
+            order: 0
+        )
     }
 }
